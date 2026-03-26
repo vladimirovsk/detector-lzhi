@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://detektor-lzhi.net.ua"),
   title: "Полиграф в Одессе | Детектор лжи — Профессиональная проверка",
   description:
     "Пройти полиграф в Одессе. Наша цель — выявить истину. Надёжные и точные услуги полиграфа для бизнеса и частных лиц. Предварительная запись: +380663053778",

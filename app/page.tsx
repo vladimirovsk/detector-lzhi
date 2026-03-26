@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 const services = [
   {
@@ -364,59 +365,7 @@ export default function Home() {
             </div>
 
             {/* Contact form */}
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-primary mb-6">Залишити заявку</h3>
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                className="space-y-4"
-                aria-label="Форма зворотного зв'язку"
-              >
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Ваше ім&apos;я
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Іван Іванович"
-                    required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Телефон
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+38 (0__) ___-__-__"
-                    required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Повідомлення (необов&apos;язково)
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    placeholder="Опишіть ситуацію або питання..."
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                  />
-                </div>
-                <button type="submit" className="btn-primary w-full text-center">
-                  Відправити заявку
-                </button>
-                <p className="text-xs text-gray-500 text-center">
-                  Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних
-                </p>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </section>
 
