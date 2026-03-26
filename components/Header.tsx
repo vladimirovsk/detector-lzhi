@@ -39,8 +39,8 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="Полиграф в Одессе"
-            width={50}
-            height={50}
+            width={200}
+            height={600}
             className="rounded"
           />
           <div className="text-white">
