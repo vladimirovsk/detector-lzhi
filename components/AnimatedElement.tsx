@@ -29,10 +29,10 @@ export default function AnimatedElement({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          timer = setTimeout(() => setVisible(true), delay);
-        } else {
-          clearTimeout(timer);
-          setVisible(false);
+          timer = setTimeout(() => {
+            setVisible(true);
+            observer.unobserve(el);
+          }, delay);
         }
       },
       { threshold }
