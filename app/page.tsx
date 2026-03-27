@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import AnimatedElement from "@/components/AnimatedElement";
 
 const services = [
   {
@@ -80,7 +81,7 @@ export default function Home() {
       <Header />
 
       <main id="top">
-        {/* Hero */}
+        {/* ── Hero ── */}
         <section
           className="relative min-h-screen flex items-center justify-center bg-primary text-white overflow-hidden pt-24"
           aria-label="Головна секція"
@@ -96,15 +97,22 @@ export default function Home() {
             />
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            {/* Hero анімації — одразу при завантаженні */}
+            <h1 className="animate__animated animate__fadeInDown text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Поліграф в Одесі
               <span className="block text-accent mt-2">Детектор лжи</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p
+              className="animate__animated animate__fadeInUp text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed"
+              style={{ animationDelay: "0.4s" }}
+            >
               Ваш надійний полiграф в Одесі — точність і професіоналізм. Перевірка на полiграфі —
               найшвидший та надійніший спосіб виявити приховану інформацію для компаній та приватних осіб.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div
+              className="animate__animated animate__fadeInUp flex flex-col sm:flex-row gap-4 justify-center"
+              style={{ animationDelay: "0.8s" }}
+            >
               <a href="tel:+380663053778" className="btn-primary text-lg">
                 Зателефонувати
               </a>
@@ -112,52 +120,59 @@ export default function Home() {
                 Наші послуги
               </a>
             </div>
-            <div className="mt-8 text-gray-300 text-sm">
+            <div
+              className="animate__animated animate__fadeIn mt-8 text-gray-300 text-sm"
+              style={{ animationDelay: "1.2s" }}
+            >
               <span className="font-semibold text-white">+38 (066) 305-37-78</span> — Попередній запис
             </div>
           </div>
         </section>
 
-        {/* Stats */}
+        {/* ── Stats ── */}
         <section className="bg-accent py-10" aria-label="Наші досягнення">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {advantages.map((a) => (
-              <div key={a.label}>
+            {advantages.map((a, i) => (
+              <AnimatedElement key={a.label} animation="zoomIn" delay={i * 120}>
                 <div className="text-3xl font-bold text-white">{a.value}</div>
                 <div className="text-sm text-white/80 mt-1">{a.label}</div>
-              </div>
+              </AnimatedElement>
             ))}
           </div>
         </section>
 
-        {/* Services */}
+        {/* ── Services ── */}
         <section id="services" className="py-20 bg-gray-50" aria-label="Послуги">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="section-title">Ми пропонуємо</h2>
-              <p className="section-subtitle max-w-2xl mx-auto">
-                Перевірка на якісному поліграфі в Одесі — точні результати за оптимальною ціною
-              </p>
+              <AnimatedElement animation="fadeInDown">
+                <h2 className="section-title">Ми пропонуємо</h2>
+                <p className="section-subtitle max-w-2xl mx-auto">
+                  Перевірка на якісному поліграфі в Одесі — точні результати за оптимальною ціною
+                </p>
+              </AnimatedElement>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((s) => (
-                <div
+              {services.map((s, i) => (
+                <AnimatedElement
                   key={s.title}
+                  animation="fadeInUp"
+                  delay={i * 150}
                   className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
                 >
                   <Image src={s.icon} alt={s.title} width={56} height={56} className="mb-4" />
                   <h3 className="font-bold text-primary text-lg mb-2">{s.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{s.description}</p>
-                </div>
+                </AnimatedElement>
               ))}
             </div>
           </div>
         </section>
 
-        {/* About */}
+        {/* ── About ── */}
         <section id="about" className="py-20" aria-label="Про нас">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+            <AnimatedElement animation="fadeInLeft" className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <Image
                 src="/images/expert.jpg"
                 alt="Полиграфолог в Одесі"
@@ -165,8 +180,8 @@ export default function Home() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
-            <div>
+            </AnimatedElement>
+            <AnimatedElement animation="fadeInRight" delay={150}>
               <h2 className="section-title">Чому обирають нас?</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Ми надаємо професійні послуги поліграфа (детектора лжи) в Одесі вже більше 7 років.
@@ -198,14 +213,14 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </AnimatedElement>
           </div>
         </section>
 
-        {/* Accuracy */}
+        {/* ── Accuracy ── */}
         <section id="accuracy" className="py-20 bg-primary text-white" aria-label="Точність перевірки">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <AnimatedElement animation="fadeInLeft">
               <h2 className="text-3xl font-bold mb-4 text-white">
                 Точність перевірки на полiграфі для бізнесу
               </h2>
@@ -221,8 +236,12 @@ export default function Home() {
               <a href="#contact" className="btn-primary">
                 Отримати консультацію
               </a>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+            </AnimatedElement>
+            <AnimatedElement
+              animation="fadeInRight"
+              delay={150}
+              className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]"
+            >
               <Image
                 src="/images/polygraph-device.jpg"
                 alt="Поліграф — детектор лжи"
@@ -230,21 +249,25 @@ export default function Home() {
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
+            </AnimatedElement>
           </div>
         </section>
 
-        {/* Prices */}
+        {/* ── Prices ── */}
         <section id="prices" className="py-20 bg-gray-50" aria-label="Ціни на послуги">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="section-title">Ціни на послуги</h2>
-              <p className="section-subtitle">Прозоре ціноутворення без прихованих платежів</p>
+              <AnimatedElement animation="fadeInDown">
+                <h2 className="section-title">Ціни на послуги</h2>
+                <p className="section-subtitle">Прозоре ціноутворення без прихованих платежів</p>
+              </AnimatedElement>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {prices.map((plan) => (
-                <div
+              {prices.map((plan, i) => (
+                <AnimatedElement
                   key={plan.name}
+                  animation="flipInX"
+                  delay={i * 150}
                   className={`rounded-2xl p-8 ${
                     plan.featured
                       ? "bg-primary text-white shadow-2xl scale-105"
@@ -284,9 +307,7 @@ export default function Home() {
                         }`}
                       >
                         <svg
-                          className={`w-4 h-4 shrink-0 ${
-                            plan.featured ? "text-accent" : "text-accent"
-                          }`}
+                          className="w-4 h-4 shrink-0 text-accent"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -310,16 +331,16 @@ export default function Home() {
                   >
                     Записатись
                   </a>
-                </div>
+                </AnimatedElement>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Contact */}
+        {/* ── Contact ── */}
         <section id="contact" className="py-20" aria-label="Контактна інформація">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
+            <AnimatedElement animation="fadeInLeft">
               <h2 className="section-title">Зв&apos;яжіться з нами</h2>
               <p className="text-gray-600 mb-8">
                 Зателефонуйте або залиште запит — ми відповімо протягом 15 хвилин та підберемо
@@ -362,24 +383,28 @@ export default function Home() {
                   </div>
                 </li>
               </ul>
-            </div>
+            </AnimatedElement>
 
-            {/* Contact form */}
-            <ContactForm />
+            <AnimatedElement animation="fadeInRight" delay={150}>
+              <ContactForm />
+            </AnimatedElement>
           </div>
         </section>
 
-        {/* CTA */}
+        {/* ── CTA ── */}
         <section className="py-16 bg-accent text-white text-center" aria-label="Заклик до дії">
-          <div className="max-w-2xl mx-auto px-4">
+          <AnimatedElement animation="fadeInUp" className="max-w-2xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Готові дізнатись правду?</h2>
             <p className="text-white/80 mb-8 text-lg">
               Зателефонуйте зараз — перша консультація безкоштовно
             </p>
-            <a href="tel:+380663053778" className="btn-outline text-lg">
+            <a
+              href="tel:+380663053778"
+              className="btn-outline text-lg animate__animated animate__pulse animate__infinite"
+            >
               +38 (066) 305-37-78
             </a>
-          </div>
+          </AnimatedElement>
         </section>
       </main>
 
