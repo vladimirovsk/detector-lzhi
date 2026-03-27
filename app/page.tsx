@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContactForm from "@/components/ContactForm";
 import AnimatedElement from "@/components/AnimatedElement";
 
 const services = [
@@ -386,7 +385,44 @@ export default function Home() {
             </AnimatedElement>
 
             <AnimatedElement animation="fadeInRight" delay={150}>
-              <ContactForm />
+              {/* Expert photo */}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl mb-8">
+                <Image
+                  src="/images/expert-work.jpg"
+                  alt="Спеціаліст-поліграфолог за роботою"
+                  width={640}
+                  height={480}
+                  className="w-full object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent px-6 py-5">
+                  <p className="text-white font-semibold text-lg">Михайло — сертифікований поліграфолог</p>
+                  <p className="text-white/75 text-sm">Досвід роботи понад 7 років · 220+ проведених тестів</p>
+                </div>
+              </div>
+
+              {/* FAQ */}
+              <div className="space-y-4">
+                {[
+                  {
+                    q: "Скільки часу займає тест?",
+                    a: "Стандартна сесія — від 1,5 до 3 годин, залежно від кількості питань.",
+                  },
+                  {
+                    q: "Чи є результати конфіденційними?",
+                    a: "Так. Результати передаються лише замовнику і не розголошуються третім особам.",
+                  },
+                  {
+                    q: "Як підготуватися до тесту?",
+                    a: "Виспіться, не вживайте алкоголь за 24 години. Спеціальна підготовка не потрібна.",
+                  },
+                ].map(({ q, a }) => (
+                  <div key={q} className="border border-gray-200 rounded-xl p-4">
+                    <p className="font-semibold text-gray-800 mb-1">{q}</p>
+                    <p className="text-gray-600 text-sm">{a}</p>
+                  </div>
+                ))}
+              </div>
             </AnimatedElement>
           </div>
         </section>
