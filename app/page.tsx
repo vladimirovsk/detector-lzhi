@@ -400,7 +400,7 @@ export default function Home() {
             </p>
             <a
               href="tel:+380663053778"
-              className="btn-outline text-lg animate__animated animate__pulse animate__infinite"
+              className="btn-outline text-lg"
             >
               +38 (066) 305-37-78
             </a>
