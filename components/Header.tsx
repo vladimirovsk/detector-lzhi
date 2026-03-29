@@ -38,14 +38,14 @@ export default function Header() {
         <a href="#top" className="flex items-center gap-3">
           <Image
             src="/images/logo.png"
-            alt="Полиграф в Одессе"
+            alt="Поліграф в Одесі"
             width={200}
             height={600}
             className="rounded"
           />
           <div className="text-white">
-            <div className="font-bold text-lg leading-tight">Полиграф в Одессе</div>
-            <div className="text-xs text-gray-300">Детектор лжи</div>
+            <div className="font-bold text-lg leading-tight">Поліграф в Одесі</div>
+            <div className="text-xs text-gray-300">Детектор брехні</div>
           </div>
         </a>
 

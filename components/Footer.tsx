@@ -9,10 +9,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <Image src="/images/logo.png" alt="Полиграф в Одессе" width={45} height={45} className="rounded" />
+            <Image src="/images/logo.png" alt="Поліграф в Одесі" width={45} height={45} className="rounded" />
             <div>
-              <div className="text-white font-bold text-lg leading-tight">Полиграф в Одессе</div>
-              <div className="text-xs text-gray-400">Детектор лжи</div>
+              <div className="text-white font-bold text-lg leading-tight">Поліграф в Одесі</div>
+              <div className="text-xs text-gray-400">Детектор брехні</div>
             </div>
           </div>
           <p className="text-sm leading-relaxed">
@@ -70,7 +70,7 @@ export default function Footer() {
 
       <div className="border-t border-primary py-4">
         <div className="max-w-6xl mx-auto px-4 text-center text-xs text-gray-500">
-          © {year} Полиграф в Одессе. Всі права захищені.
+          © {year} Поліграф в Одесі. Всі права захищені.
         </div>
       </div>
     </footer>

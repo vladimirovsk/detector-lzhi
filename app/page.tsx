@@ -88,7 +88,7 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/hero.jpg"
-              alt="Полиграф в Одессе"
+              alt="Поліграф в Одесі"
               fill
               className="object-cover opacity-25"
               priority
@@ -99,7 +99,7 @@ export default function Home() {
             {/* Hero анімації — одразу при завантаженні */}
             <h1 className="animate__animated animate__fadeInDown text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Поліграф в Одесі
-              <span className="block text-accent mt-2">Детектор лжи</span>
+              <span className="block text-accent mt-2">Детектор брехні</span>
             </h1>
             <p
               className="animate__animated animate__fadeInUp text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed"
@@ -183,7 +183,7 @@ export default function Home() {
             <AnimatedElement animation="fadeInRight" delay={150}>
               <h2 className="section-title">Чому обирають нас?</h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Ми надаємо професійні послуги поліграфа (детектора лжи) в Одесі вже більше 7 років.
+                Ми надаємо професійні послуги поліграфа (детектора брехні) в Одесі вже більше 7 років.
                 Наша команда сертифікованих полiграфологів має багатий досвід роботи з корпоративними
                 клієнтами та приватними особами.
               </p>
@@ -242,8 +242,8 @@ export default function Home() {
               className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]"
             >
               <Image
-                src="/images/polygraph-device.jpg"
-                alt="Поліграф — детектор лжи"
+                src="/images/polygraph-device.png"
+                alt="Поліграф — детектор брехні"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -342,7 +342,7 @@ export default function Home() {
             <AnimatedElement animation="fadeInLeft">
               <h2 className="section-title">Зв&apos;яжіться з нами</h2>
               <p className="text-gray-600 mb-8">
-                Зателефонуйте або залиште запит — ми відповімо протягом 15 хвилин та підберемо
+                Зателефонуйте або залиште запит — ми
                 зручний час для проведення тесту.
               </p>
               <ul className="space-y-6">
@@ -361,13 +361,54 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-800 mb-1">Telegram</div>
+                    <a
+                      href="https://t.me/it_vladimirov"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-semibold hover:text-accent transition-colors"
+                    >
+                      @Expert_Detekt
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M11.997 0C5.373 0 0 5.373 0 12c0 6.628 5.373 12 11.997 12C18.627 24 24 18.628 24 12c0-6.627-5.373-12-12.003-12zM17.67 16.612c-.232.356-.688.468-1.05.247-2.882-1.76-6.508-2.158-10.777-1.182-.41.094-.82-.163-.913-.572-.094-.41.162-.82.572-.913 4.672-1.068 8.677-.608 11.908 1.37.363.221.475.677.26 1.05zm1.405-3.126c-.29.447-.907.587-1.354.297-3.3-2.029-8.328-2.616-12.23-1.432-.506.154-1.04-.132-1.194-.637-.153-.506.132-1.04.638-1.194 4.46-1.354 10.003-.698 13.842 1.632.447.291.587.907.298 1.334zm.12-3.255C15.468 7.91 8.744 7.68 5.174 8.762c-.605.184-1.246-.154-1.43-.76-.184-.605.154-1.246.76-1.43 4.12-1.25 10.966-1.008 15.292 1.45.545.314.731 1.01.417 1.554-.313.545-1.01.731-1.554.417l.036.034z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-800 mb-1">Viber</div>
+                    <a
+                      href="viber://chat?number=%2B380679172433"
+                      className="text-primary font-semibold hover:text-accent transition-colors"
+                    >
+                      +38 (067) 917-24-33
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shrink-0">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div>
                     <div className="font-semibold text-gray-800 mb-1">Адреса</div>
-                    <p className="text-gray-600">вул. Балківська 97, Одеса</p>
+                    <a
+                      href="https://maps.google.com/?q=вул.+Балківська+97,+Одеса,+Україна"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-accent transition-colors"
+                    >
+                      вул. Балківська 97, Одеса
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -382,6 +423,36 @@ export default function Home() {
                   </div>
                 </li>
               </ul>
+
+              {/* Google Maps */}
+              <div className="mt-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <iframe
+                  src="https://maps.google.com/maps?q=вул.+Балківська+97,+Одеса,+Україна&output=embed&z=16&hl=uk"
+                  width="100%"
+                  height="240"
+                  style={{ border: 0, display: "block" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Розташування офісу на карті"
+                />
+                <a
+                  href="https://maps.google.com/?q=вул.+Балківська+97,+Одеса,+Україна"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between gap-3 bg-white px-5 py-3 text-sm font-medium text-primary hover:bg-gray-50 transition-colors group"
+                >
+                  <span className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-accent shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                    вул. Балківська 97, Одеса
+                  </span>
+                  <span className="text-accent group-hover:underline text-xs font-semibold whitespace-nowrap">
+                    Відкрити в Google Maps →
+                  </span>
+                </a>
+              </div>
             </AnimatedElement>
 
             <AnimatedElement animation="fadeInRight" delay={150}>
@@ -396,7 +467,7 @@ export default function Home() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent px-6 py-5">
-                  <p className="text-white font-semibold text-lg">Михайло — сертифікований поліграфолог</p>
+                  <p className="text-white font-semibold text-lg">Віктор — сертифікований поліграфолог</p>
                   <p className="text-white/75 text-sm">Досвід роботи понад 7 років · 220+ проведених тестів</p>
                 </div>
               </div>
@@ -414,7 +485,7 @@ export default function Home() {
                   },
                   {
                     q: "Як підготуватися до тесту?",
-                    a: "Виспіться, не вживайте алкоголь за 24 години. Спеціальна підготовка не потрібна.",
+                    a: "Виспіться, не вживайте алкоголь, та заспокійливе за 24 години. Спеціальна підготовка не потрібна.",
                   },
                 ].map(({ q, a }) => (
                   <div key={q} className="border border-gray-200 rounded-xl p-4">
