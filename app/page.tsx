@@ -468,7 +468,7 @@ export default function Home() {
                   <div>
                     <div className="font-semibold text-gray-800 mb-1">Viber</div>
                     <a
-                      href="viber://chat?number=%2B380679172433"
+                      href="viber://chat?number=%2B380663053778"
                       className="text-primary font-semibold hover:text-accent transition-colors"
                     >
                       +38 (067) 917-24-33
