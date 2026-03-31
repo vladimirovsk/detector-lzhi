@@ -90,7 +90,7 @@ export default function Home() {
               src="/images/hero.jpg"
               alt="Поліграф в Одесі"
               fill
-              className="object-cover opacity-25"
+              className="object-cover opacity-50"
               priority
               sizes="100vw"
             />
@@ -242,7 +242,7 @@ export default function Home() {
               className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]"
             >
               <Image
-                src="/images/polygraph-device.png"
+                src="/images/polygraph-device.jpg"
                 alt="Поліграф — детектор брехні"
                 fill
                 className="object-cover"
@@ -424,8 +424,8 @@ export default function Home() {
             <AnimatedElement animation="fadeInLeft">
               <h2 className="section-title">Зв&apos;яжіться з нами</h2>
               <p className="text-gray-600 mb-8">
-                Зателефонуйте або залиште запит — ми
-                зручний час для проведення тесту.
+                Зателефонуйте або напишить у будь-якій месенджер (telegram, viber, whatsapp) —
+                ми звʼяжемося з Вами та підбиремо зручний час для проведення тесту.
               </p>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
@@ -450,12 +450,12 @@ export default function Home() {
                   <div>
                     <div className="font-semibold text-gray-800 mb-1">Telegram</div>
                     <a
-                      href="https://t.me/it_vladimirov"
+                      href="https://t.me/Viktor_Poligrafolog"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary font-semibold hover:text-accent transition-colors"
                     >
-                      @Expert_Detekt
+                      @Viktor_Poligrafolog
                     </a>
                   </div>
                 </li>
@@ -471,7 +471,7 @@ export default function Home() {
                       href="viber://chat?number=%2B380663053778"
                       className="text-primary font-semibold hover:text-accent transition-colors"
                     >
-                      +38 (067) 917-24-33
+                      +38 (066) 305-37-78
                     </a>
                   </div>
                 </li>
@@ -550,7 +550,7 @@ export default function Home() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent px-6 py-5">
                   <p className="text-white font-semibold text-lg">Віктор — сертифікований поліграфолог</p>
-                  <p className="text-white/75 text-sm">Досвід роботи понад 7 років · 220+ проведених тестів</p>
+                  <p className="text-white/75 text-sm">Досвід роботи понад 7 років · 1000+ проведених тестів</p>
                 </div>
               </div>
 
