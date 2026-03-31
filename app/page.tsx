@@ -424,9 +424,9 @@ export default function Home() {
             <AnimatedElement animation="fadeInLeft">
               <h2 className="section-title">Зв&apos;яжіться з нами</h2>
               <p className="text-gray-600 mb-8">
-                Зателефонуйте або напишить у будь-якій месенджер (telegram, viber, whatsapp) —
-                ми звʼяжемося з Вами та підбиремо зручний час для проведення тесту.
-              </p>
+                Зателефонуйте або напишіть у будь- який месенджер (telegram, viber
+                whatsapp) - ми зв'яжемося з Вами та підберемо зручній час для
+                проведення тесту.              </p>
               <ul className="space-y-6">
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shrink-0">
