@@ -1,7 +1,9 @@
 # Node / Next.js
 node_modules/
 .next/
+.idea/
 old/
+out/
 dist/
 coverage/
 .env

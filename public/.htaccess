@@ -1,0 +1,5 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect all 404s to homepage
+ErrorDocument 404 /index.html
