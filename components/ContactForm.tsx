@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const t = useTranslations("form");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -20,60 +22,58 @@ export default function ContactForm() {
             clipRule="evenodd"
           />
         </svg>
-        <h3 className="text-xl font-bold text-primary mb-2">Дякуємо!</h3>
-        <p className="text-gray-600">Ваша заявка прийнята. Ми зателефонуємо вам протягом 15 хвилин.</p>
+        <h3 className="text-xl font-bold text-primary mb-2">{t("successTitle")}</h3>
+        <p className="text-gray-600">{t("successText")}</p>
       </div>
     );
   }
 
   return (
     <div className="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100">
-      <h3 className="text-xl font-bold text-primary mb-6">Залишити заявку</h3>
-      <form onSubmit={handleSubmit} className="space-y-4" aria-label="Форма зворотного зв'язку">
+      <h3 className="text-xl font-bold text-primary mb-6">{t("title")}</h3>
+      <form onSubmit={handleSubmit} className="space-y-4" aria-label={t("title")}>
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            Ваше ім&apos;я
+            {t("nameLabel")}
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Іван Іванович"
+            placeholder={t("namePlaceholder")}
             required
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
           />
         </div>
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-            Телефон
+            {t("phoneLabel")}
           </label>
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder="+38 (0__) ___-__-__"
+            placeholder={t("phonePlaceholder")}
             required
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
           />
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-            Повідомлення (необов&apos;язково)
+            {t("messageLabel")}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            placeholder="Опишіть ситуацію або питання..."
+            placeholder={t("messagePlaceholder")}
             className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
           />
         </div>
         <button type="submit" className="btn-primary w-full text-center">
-          Відправити заявку
+          {t("submit")}
         </button>
-        <p className="text-xs text-gray-500 text-center">
-          Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних
-        </p>
+        <p className="text-xs text-gray-500 text-center">{t("consent")}</p>
       </form>
     </div>
   );

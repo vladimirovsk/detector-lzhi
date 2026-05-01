@@ -1,5 +1,12 @@
 Options -MultiViews
 RewriteEngine On
 
-# Redirect all 404s to homepage
-ErrorDocument 404 /index.html
+# Redirect root to default locale (Ukrainian)
+RewriteRule ^$ /uk/ [R=301,L]
+RewriteRule ^index\.html$ /uk/ [R=301,L]
+
+# Add trailing slash to locale paths without it
+RewriteRule ^(uk|ru|en)$ /$1/ [R=301,L]
+
+# Redirect all 404s to Ukrainian homepage
+ErrorDocument 404 /uk/index.html

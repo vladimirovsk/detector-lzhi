@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Polygraph in Odessa | Lie Detector — Professional Testing",
+    "description": "Polygraph testing in Odessa — professional lie detector examination. Experienced examiner, 95%+ accuracy. Tests for business, family, and personal matters. Confidential. Call: +380663053778",
+    "keywords": "polygraph Odessa, lie detector Odessa, polygraph test, polygraph services, polygraph examiner Odessa, lie detector test Ukraine",
+    "ogTitle": "Polygraph in Odessa | Lie Detector — Professional Testing",
+    "ogDescription": "Polygraph testing in Odessa. Our goal is to establish the truth. Reliable and accurate polygraph services for businesses and individuals."
+  },
+  "header": {
+    "address": "Odessa, Balkivska St. 97",
+    "logoAlt": "Polygraph in Odessa",
+    "siteName": "Polygraph in Odessa",
+    "tagline": "Lie Detector",
+    "openMenu": "Open menu",
+    "book": "Book now",
+    "bookFull": "Book an appointment"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "accuracy": "Accuracy",
+    "prices": "Prices",
+    "contacts": "Contact"
+  },
+  "lang": {
+    "uk": "Укр",
+    "ru": "Рус",
+    "en": "Eng"
+  },
+  "hero": {
+    "title": "Polygraph in Odessa",
+    "subtitle": "Lie Detector",
+    "description": "Your reliable polygraph in Odessa — precision and professionalism. A polygraph test is the fastest and most reliable way to uncover hidden information for companies and individuals.",
+    "call": "Call us",
+    "ourServices": "Our services",
+    "preRecord": "Pre-booking"
+  },
+  "stats": {
+    "accuracy": { "value": "95%+", "label": "Result accuracy" },
+    "experience": { "value": "7+", "label": "Years of experience" },
+    "tests": { "value": "1000+", "label": "Tests conducted" },
+    "confidential": { "value": "100%", "label": "Confidentiality" }
+  },
+  "services": {
+    "title": "We offer",
+    "subtitle": "Professional polygraph testing in Odessa — accurate results at competitive prices",
+    "items": [
+      {
+        "title": "HR Security",
+        "description": "Screening job candidates, identifying dishonest employees, investigating corporate theft and fraud."
+      },
+      {
+        "title": "Family Matters",
+        "description": "Fidelity testing, suspicion of a spouse's infidelity. Confidential, tactful, and respectful to both parties."
+      },
+      {
+        "title": "Private Investigations",
+        "description": "Establishing the truth in complex situations: theft, fraud, disputes between partners, internal investigations."
+      },
+      {
+        "title": "Business Screening",
+        "description": "Identifying dishonest partners, checking staff loyalty, investigating leaks of confidential information."
+      }
+    ]
+  },
+  "about": {
+    "title": "Why choose us?",
+    "expertAlt": "Polygraph examiner in Odessa",
+    "p1": "We have been providing professional polygraph (lie detector) services in Odessa for over 7 years. Our team of certified examiners has extensive experience working with corporate clients and private individuals.",
+    "p2": "A polygraph test is the fastest, most reliable, and practically the only way to quickly verify whether a person is concealing information. If you find yourself in a difficult situation — don't delay reaching out to our experts.",
+    "features": [
+      "Certified examiners",
+      "Modern equipment",
+      "Full confidentiality",
+      "Written report after the test",
+      "On-site visits available"
+    ]
+  },
+  "accuracy": {
+    "title": "Polygraph accuracy for business",
+    "deviceAlt": "Polygraph — lie detector device",
+    "p1": "A modern polygraph records over 10 physiological parameters: breathing, pulse, blood pressure, galvanic skin response, and other indicators. Test accuracy reaches 95–98% when conducted properly.",
+    "p2": "For businesses, this means reliable protection against dishonest employees, safeguarding trade secrets, and effective resolution of internal conflicts.",
+    "cta": "Get a consultation"
+  },
+  "prices": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing with no hidden fees",
+    "popular": "Most popular",
+    "book": "Book now",
+    "items": [
+      {
+        "name": "Basic check",
+        "price": "from 2,500 ₴",
+        "duration": "1.5–2 hours",
+        "features": [
+          "1–2 test topics",
+          "Written report",
+          "Pre-session consultation",
+          "Confidentiality"
+        ]
+      },
+      {
+        "name": "Standard check",
+        "price": "from 4,000 ₴",
+        "duration": "2–3 hours",
+        "featured": true,
+        "features": [
+          "Up to 4 test topics",
+          "Detailed written report",
+          "Session video recording",
+          "Full confidentiality"
+        ]
+      },
+      {
+        "name": "Corporate",
+        "price": "Custom pricing",
+        "duration": "By arrangement",
+        "features": [
+          "Group examination",
+          "Discount for 5+ people",
+          "On-site visits",
+          "Corporate agreement"
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Client reviews",
+    "subtitle": "What people say after using our services",
+    "items": [
+      {
+        "text": "I came to check on my husband. I was very worried, but the specialist immediately put me at ease and explained the whole process. I received the written result the same day. Confidentiality was fully maintained — no one I know found out anything.",
+        "name": "Natalia R.",
+        "role": "Private individual",
+        "initials": "NR"
+      },
+      {
+        "text": "We tested three candidates for a management position. One of them had concealed being dismissed from a previous job for embezzlement. Thanks to the polygraph, we avoided serious problems. I recommend it to all employers.",
+        "name": "Andriy M.",
+        "role": "Business owner",
+        "initials": "AM"
+      },
+      {
+        "text": "After a series of thefts at our warehouse, we decided to test the staff. The testing revealed two guilty parties. The specialist worked efficiently without unnecessary stress for the team. Savings exceeded a full month's turnover.",
+        "name": "Sergiy V.",
+        "role": "Company director",
+        "initials": "SV"
+      },
+      {
+        "text": "I was unfairly accused of theft at work. I took the polygraph test — the results proved my innocence. Thank you for the clear and accurate conclusions. The matter was closed immediately after receiving the written report.",
+        "name": "Oleksiy D.",
+        "role": "Private individual",
+        "initials": "OD"
+      },
+      {
+        "text": "We had a business partner tested before signing a major contract. The specialist conducted the test correctly and professionally. We gained confidence in the partner's honesty and now collaborate without any doubts.",
+        "name": "Olena K.",
+        "role": "Entrepreneur",
+        "initials": "OK"
+      },
+      {
+        "text": "A polygraph is stressful, but I was pleasantly impressed by the specialist's professionalism. He explained each stage and gave me time to calm down. After the test, I received a detailed written report. Very grateful for the tactful approach.",
+        "name": "Iryna S.",
+        "role": "Private individual",
+        "initials": "IS"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact us",
+    "description": "Call or message us on any messenger (telegram, viber, whatsapp) — we will get in touch and schedule a convenient time for the test.",
+    "phone": "Phone",
+    "address": "Address",
+    "schedule": "Working hours",
+    "scheduleValue": "Daily 9:00 – 21:00",
+    "addressValue": "Balkivska St. 97, Odessa",
+    "openMaps": "Open in Google Maps →",
+    "mapTitle": "Office location on the map",
+    "expertName": "Viktor — certified polygraph examiner",
+    "expertDesc": "Over 7 years of experience · 1000+ tests conducted",
+    "expertAlt": "Polygraph specialist at work",
+    "faq": [
+      {
+        "q": "How long does a test take?",
+        "a": "A standard session lasts from 1.5 to 3 hours, depending on the number of questions."
+      },
+      {
+        "q": "Are the results confidential?",
+        "a": "Yes. Results are shared only with the client and are not disclosed to third parties."
+      },
+      {
+        "q": "How to prepare for the test?",
+        "a": "Get enough sleep, avoid alcohol and sedatives for 24 hours. No special preparation is required."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to find out the truth?",
+    "description": "Call now — first consultation is free"
+  },
+  "footer": {
+    "siteName": "Polygraph in Odessa",
+    "tagline": "Lie Detector",
+    "logoAlt": "Polygraph in Odessa",
+    "description": "Professional polygraph services in Odessa for businesses and individuals. Confidentiality guaranteed.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contacts",
+    "address": "Balkivska St. 97, Odessa",
+    "schedule": "Daily 9:00 – 21:00",
+    "copyright": "All rights reserved."
+  },
+  "form": {
+    "title": "Leave a request",
+    "nameLabel": "Your name",
+    "namePlaceholder": "John Smith",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+38 (0__) ___-__-__",
+    "messageLabel": "Message (optional)",
+    "messagePlaceholder": "Describe your situation or question...",
+    "submit": "Send request",
+    "consent": "By clicking the button, you agree to the processing of personal data",
+    "successTitle": "Thank you!",
+    "successText": "Your request has been received. We will call you within 15 minutes."
+  }
+}
