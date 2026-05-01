@@ -1,9 +1,22 @@
 Options -MultiViews
 RewriteEngine On
 
-# Redirect root to default locale (Ukrainian)
-RewriteRule ^$ /uk/ [R=301,L]
-RewriteRule ^index\.html$ /uk/ [R=301,L]
+# --- Language auto-detection for root URL ---
+# Apache reads Accept-Language header and redirects to matching locale.
+# Uses 302 (temporary) to avoid browsers caching the language choice.
+
+RewriteCond %{HTTP:Accept-Language} ^uk [NC]
+RewriteRule ^$ /uk/ [R=302,L]
+
+RewriteCond %{HTTP:Accept-Language} ^ru [NC]
+RewriteRule ^$ /ru/ [R=302,L]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [R=302,L]
+
+# Default fallback → Ukrainian
+RewriteRule ^$ /uk/ [R=302,L]
+RewriteRule ^index\.html$ /uk/ [R=302,L]
 
 # Add trailing slash to locale paths without it
 RewriteRule ^(uk|ru|en)$ /$1/ [R=301,L]
